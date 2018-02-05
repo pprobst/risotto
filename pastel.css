@@ -1,0 +1,72 @@
+* {
+    margin-left: 1em;
+}
+
+body {
+    background-color: #F7F3EE;
+}
+
+h1 {
+    color: #F2CBCD;
+    font-family: jackeyfont;
+}
+
+ul {
+    margin-left: -1.50em;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    padding: 0.8em 0.5em 0.5em 2.5875em;
+    background: #FDE3E4;
+    font-size 16px;
+    transition 0.2s;
+    font-family: Overpass;
+    color: #939DA7;
+}
+
+ul li:nth-child(odd) {
+    background: #F5DADB;
+}
+
+ul li:hover {
+    background: #D1DED6;
+}
+
+#task {
+    border: none;
+    border-bottom: 2px solid #EBBAB5;
+    background: #F7F3EE;
+    width: 20%;
+}
+
+#addButton {
+    background-color: #F6E0C2;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    font-family: jackeyfont;
+    color: #9AB7D3;
+}
+
+#rmvButton {
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: jackeyfont;
+    color: #9AB7D3;
+    position: absolute;
+    margin-left: 0.1em;
+    left: 0;
+    top: 0;
+    padding: 0.70em 1em 1em 0.8em;
+}
+
+#rmvButton:hover {
+    color: #E98388;
+}
+
