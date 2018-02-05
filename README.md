@@ -1,5 +1,5 @@
 # risotto
-Simple and minimal to-do list.
+Simple and minimal to-do list for everyday use.
 
 This is a WIP, I wrote it to train my JS and DOM a little bit. I'll probably add more features in the future. 
 
