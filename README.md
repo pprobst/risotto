@@ -1,5 +1,5 @@
 # risotto
-Simple and minimal to-do list for everyday use.
+Simple and minimal to-do list for everyday use. You'll need [jackeyfont](http://nonty.net/font/jackey_font/) and [Overpass](http://overpassfont.org/) if you want a qt list.
 
 This is a WIP, I wrote it to train my JS and DOM a little bit. I'll probably add more features in the future. 
 
