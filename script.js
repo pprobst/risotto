@@ -12,6 +12,7 @@ window.onload = function() {
             oldTodo.style.textDecoration = "line-through";
         createRmvButton(oldTodo);
         todoList.appendChild(oldTodo);
+        todoList.insertBefore(oldTodo, todoList.childNodes[0]);
     }
 
     // create new todo and append it to the list
@@ -25,6 +26,7 @@ window.onload = function() {
             newTodo.completed = false;
             createRmvButton(newTodo);
             todoList.appendChild(newTodo);
+            todoList.insertBefore(newTodo, todoList.childNodes[0]);
             saved.push({taskV: task.value, completed: false});
             localStorage.setItem("todos", JSON.stringify(saved));
         }
