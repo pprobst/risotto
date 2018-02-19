@@ -50,6 +50,7 @@ ul li:hover {
     border: none;
     font-family: jackeyfont;
     color: #9AB7D3;
+    cursor: pointer;
 }
 
 #rmvButton {
