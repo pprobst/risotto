@@ -13,6 +13,7 @@ window.onload = function() {
         createRmvButton(oldTodo);
         todoList.appendChild(oldTodo);
         todoList.insertBefore(oldTodo, todoList.childNodes[0]);
+        todoForm.reset();
     }
 
     // create new todo and append it to the list
