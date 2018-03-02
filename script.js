@@ -4,7 +4,7 @@ window.onload = function() {
     var saved = JSON.parse(localStorage.getItem("todos")) || [];
 
     // retrieve from localStorage
-    for (var i = 0; i < saved.length; i++) {
+    for (var i in saved) {
         var oldTodo = document.createElement("li");
         oldTodo.innerText = saved[i].taskV;
         oldTodo.completed = saved[i].completed ? true : false;
@@ -30,12 +30,12 @@ window.onload = function() {
             saved.push({taskV: task.value, completed: false});
             localStorage.setItem("todos", JSON.stringify(saved));
         }
-
         todoForm.reset();
     });
 
-    // clicking on "clear" removes all tasks from the list
     var clearButton = document.getElementById("clearButton");
+
+    // clicking on "clear" removes all tasks from the list
     clearButton.addEventListener("click", function(event) {
         while(todoList.hasChildNodes())
             todoList.removeChild(todoList.firstChild);
@@ -62,7 +62,7 @@ window.onload = function() {
         }
 
         // updates local storage
-        for (var i = 0; i < saved.length; i++) {
+        for (var i in saved) {
             if (saved[i].taskV === clickedItem.parentNode.firstChild.textContent) {
                 saved.splice(i, 1);
                 localStorage.setItem("todos", JSON.stringify(saved));
