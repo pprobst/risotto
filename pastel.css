@@ -42,14 +42,20 @@ ul li:hover {
     width: 20%;
 }
 
-#addButton {
+#addButton, #clearButton {
     background-color: #F6E0C2;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 4px;
     border: none;
     font-family: jackeyfont;
     color: #9AB7D3;
+    cursor: pointer;
+}
+
+#addButton:hover, #clearButton:hover {
+    color: #DA9B96;
+    transition-duration: 0.3s;
 }
 
 #rmvButton {

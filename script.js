@@ -15,7 +15,7 @@ window.onload = function() {
         todoList.insertBefore(oldTodo, todoList.childNodes[0]);
     }
 
-    // create new todo and append it to the list
+    // create new todo and append it to the list ("Add" button)
     todoForm.addEventListener("submit", function(event) {
         event.preventDefault();
         var task = document.getElementById("task");
@@ -31,6 +31,15 @@ window.onload = function() {
             localStorage.setItem("todos", JSON.stringify(saved));
         }
 
+        todoForm.reset();
+    });
+
+    // clicking on "clear" removes all tasks from the list
+    var clearButton = document.getElementById("clearButton");
+    clearButton.addEventListener("click", function(event) {
+        while(todoList.hasChildNodes())
+            todoList.removeChild(todoList.firstChild);
+        localStorage.clear();
         todoForm.reset();
     });
 
