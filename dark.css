@@ -1,0 +1,77 @@
+* {
+    margin-left: 1em;
+}
+
+body {
+    background-color: #1F1F1F;
+}
+
+h1 {
+    color: #7A7A7A;
+    font-family: jackeyfont;
+}
+
+ul {
+    margin-left: -1.65em;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    padding: 0.8em 0.5em 0.5em 2.5875em;
+    background: #282828;
+    font-size 16px;
+    font-family: Overpass;
+    color: #949494;
+}
+
+ul li:nth-child(odd) {
+    background: #333333;
+}
+
+ul li:hover {
+    background: #527855;
+}
+
+#task {
+    border: none;
+    border-bottom: 2px solid #458588;
+    background: #1F1F1F;
+    width: 20%;
+    color: #7A7A7A;
+}
+
+#addButton, #clearButton {
+    background-color: #282828;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    font-family: Overpass;
+    color: #458588;
+    cursor: pointer;
+}
+
+#addButton:hover, #clearButton:hover {
+    color: #CC241D;
+    transition-duration: 0.3s;
+}
+
+#rmvButton {
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: jackeyfont;
+    color: #CC241D;
+    position: absolute;
+    margin-left: 0.1em;
+    left: 0;
+    top: 0;
+    padding: 0.70em 1em 1em 0.8em;
+}
+
+#rmvButton:hover {
+    color: #E98388;
+}
