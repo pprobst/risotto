@@ -42,7 +42,7 @@ ul li:hover {
     color: #7A7A7A;
 }
 
-#addButton, #clearButton {
+#addButton, #clearButton, #styleButton {
     background-color: #282828;
     text-align: center;
     font-size: 14px;
@@ -53,7 +53,7 @@ ul li:hover {
     cursor: pointer;
 }
 
-#addButton:hover, #clearButton:hover {
+#addButton:hover, #clearButton:hover, #styleButton:hover {
     color: #CC241D;
     transition-duration: 0.3s;
 }

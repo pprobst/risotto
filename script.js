@@ -43,6 +43,15 @@ window.onload = function() {
         todoForm.reset();
     });
 
+    // clicking on "Theme" changes the css
+    var styleButton = document.getElementById("styleButton");
+    var cssStyle = document.getElementById("style");
+    styleButton.addEventListener("click", function(event) {
+        if (style.getAttribute("href") === "pastel.css")
+            style.setAttribute("href", "dark.css");
+        else style.setAttribute("href", "pastel.css")
+    }); 
+
     // clicking on a task does a line-through
     // clicking on the X button removes the task from the list
     todoList.addEventListener("click", function(event) {
