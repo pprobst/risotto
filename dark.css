@@ -24,6 +24,7 @@ ul li {
     font-size 16px;
     font-family: Overpass;
     color: #949494;
+    transition-duration: 0.2s;
 }
 
 ul li:nth-child(odd) {
@@ -32,7 +33,6 @@ ul li:nth-child(odd) {
 
 ul li:hover {
     background: #527855;
-    transition-duration: 0.2s;
 }
 
 #task {
