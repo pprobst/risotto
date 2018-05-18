@@ -32,6 +32,7 @@ ul li:nth-child(odd) {
 
 ul li:hover {
     background: #527855;
+    transition-duration: 0.2s;
 }
 
 #task {
