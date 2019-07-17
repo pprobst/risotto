@@ -3,6 +3,11 @@ window.onload = function() {
     var todoList = document.getElementById("todoList");
     var saved = JSON.parse(localStorage.getItem("todos")) || [];
 
+    // retrieves current theme
+    if (!localStorage.getItem('sheet'))
+            localStorage.setItem("sheet", "dark.css");
+    document.getElementById('style').setAttribute('href', localStorage.getItem('sheet'));
+
     // retrieve from localStorage
     for (var i in saved) {
         var oldTodo = document.createElement("li");
@@ -47,9 +52,13 @@ window.onload = function() {
     var styleButton = document.getElementById("styleButton");
     var cssStyle = document.getElementById("style");
     styleButton.addEventListener("click", function(event) {
-        if (style.getAttribute("href") === "pastel.css")
+        if (style.getAttribute("href") === "pastel.css") {
             style.setAttribute("href", "dark.css");
-        else style.setAttribute("href", "pastel.css")
+            localStorage.setItem("sheet", "dark.css");
+        } else {
+            style.setAttribute("href", "pastel.css")
+            localStorage.setItem("sheet", "pastel.css");
+        }
     }); 
 
     // clicking on a task does a line-through
